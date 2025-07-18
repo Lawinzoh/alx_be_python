@@ -1,22 +1,22 @@
 
-task = input("Enter your task: ")
-priority = input("Enter task priority (high/medium/low): ")
-time_bound = input("Is this a time bount task? (yes/no): ")
-match priority:
+Task = input("Enter your Task: ")
+Priority = input("Enter Task Priority (high/medium/low): ")
+Time_Bound = input("Is this a time bount Task? (yes/no): ")
+match Priority:
     case "high":
-        if time_bound == "yes":
-            print(f"Reminder: {task} is a high priority task that requires immeadiate attention today!")
+        if Time_Bound == "yes":
+            print(f"Reminder: {Task} is a high Priority Task that requires immeadiate attention today!")
         else:
-            print(f"Note: {task} is a high priority task. Try to complete it as soon as possible.")
+            print(f"Note: {Task} is a high Priority Task. Try to complete it as soon as possible.")
     case "medium":
-        if time_bound == "yes":
-            print(f"Reminder: {task} is a medium priority task that should be completed soon.")
+        if Time_Bound == "yes":
+            print(f"Reminder: {Task} is a medium Priority Task that should be completed soon.")
         else:
-            print(f"Note: {task} is a medium priority task. You can complete it when you have time.")
+            print(f"Note: {Task} is a medium Priority Task. You can complete it when you have time.")
     case "low":
-        if time_bound == "yes":
-            print(f"Reminder: {task} is a low priority task that can be completed at your convenience.")
+        if Time_Bound == "yes":
+            print(f"Reminder: {Task} is a low Priority Task that can be completed at your convenience.")
         else:
-            print(f"Note: {task} is a low priority task. You can complete it whenever you have time.")
+            print(f"Note: {Task} is a low Priority Task. You can complete it whenever you have time.")
     case _:
-        print("Invalid priority. Please enter high, medium, or low.")
+        print("Invalid Priority. Please enter high, medium, or low.")
