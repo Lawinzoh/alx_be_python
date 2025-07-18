@@ -1,7 +1,7 @@
 while True:
     task = input("Enter your task: ")
-    priority = input("Enter task priority (high/medium/low): ")
-    time_bound = input("Is this a time bound task? (yes/no): ")
+    priority = input("Priority (high/medium/low): ")
+    time_bound = input("Is it time-bound? (yes/no): ")
 
     match priority.lower():
         case "high":
